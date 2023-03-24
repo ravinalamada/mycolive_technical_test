@@ -8,7 +8,12 @@ We warmly welcome you on behalf of the MYCOlive development team.
 
 This is the welcome page of your `HomeWork`, this is a Laravel + MYSQL project, which have been dockerize inside a container together with MYSQL database.
 
-> 💡 If you are unfamiliar with Docker, might worth check this [few minutes intro](https://www.youtube.com/watch?v=Gjnup-PuquQ&ab_channel=Fireship) 
+> 💡 If you are unfamiliar with Docker, might worth check this [few minutes intro](https://www.youtube.com/watch?v=Gjnup-PuquQ&ab_channel=Fireship)
+
+<br />
+<br />
+<br />
+<br />
 
 # Prerequisites
 
