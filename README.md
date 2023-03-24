@@ -50,7 +50,7 @@ Please fork this repo to your private GitHub user, so that you can commit to you
 
 You can make your forked repo public. Anyway you'll benefit from having a new pet-project under your own github profile.
 
-We expect you to send a `pull request`, merging back your forked repository to our original repository after completing your tasks defined below.
+We expect you to `create a new branch`, work on that `branch`, send a `pull request`, merging back your forked repository to our original repository after completing your tasks defined below.
 
 ## Let's get started
 
@@ -178,6 +178,7 @@ What you need to do:
 -   Tinkering around dockerfile and docker-compose
 
 ### References
+
 -   https://laravel.com/docs/10.x
 -   https://docs.docker.com/get-started/
 -   https://www.youtube.com/watch?v=Gjnup-PuquQ&ab_channel=Fireship
