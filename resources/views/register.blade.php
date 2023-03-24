@@ -16,7 +16,7 @@
                 </div>
 
                 <div class="form-container">
-                    <input type="password" required>
+                    <input type="password" placeholder="password" required>
                 </div>
 
                 <div class="form-container">

@@ -6,9 +6,9 @@
 
 We warmly welcome you on behalf of the MYCOlive development team.
 
-This is the welcome page of your `HomeWork`, this is a Laravel + MYSQL project, which have been dockerize inside a container together with MYSQL database.
+This is the welcome page of your `HomeWork`, this is a Laravel + MYSQL project, which have been dockerized inside a container together.
 
-> 💡 If you are unfamiliar with Docker, might worth check this [few minutes intro](https://www.youtube.com/watch?v=Gjnup-PuquQ&ab_channel=Fireship)
+> 💡 If you are not familiar with Docker, might worth check this [few minutes intro](https://www.youtube.com/watch?v=Gjnup-PuquQ&ab_channel=Fireship)
 
 <br />
 <br />
@@ -32,7 +32,7 @@ The workflow:
 -   Register page
 -   Login Page
 -   Trivia question page
--   Final page(s) with results
+-   Final page depend's on user's score
 -   If user able to get 100% questions correct, go to `success` page, else go to `fail` page.
 
 # Your Task
@@ -56,11 +56,11 @@ We expect you to `create a new branch`, work on that `branch` and send a `pull r
 
 After forking / cloning your repo, `cd` into folder directory & run `docker compose up -d`.
 
-Congratulation, your app is now running on `localhost:2222`. We also just set up our own mysql database that is running on `127.0.0.1:1111`.
+Congratulation, your app is now running on `localhost:2222`. We also just finish set up our own mysql database that is running on `127.0.0.1:1111`.
 
 In the database, we already create a `users` table.
 
-If you go try to `localhost:2222`. We put a middleware to protect the route from an unauthenticated users. Hence you will be redirected to `localhost:2222/login`
+If you go to `localhost:2222`. We put a middleware to protect the route from an unauthenticated users. Hence you will be redirected to `localhost:2222/login`
 
 ## Do the chore 🧹 🧹
 
@@ -72,7 +72,7 @@ The controller for this can be found in `app/Http/Controllers/AuthController@reg
 
 What you need to do:
 
-1. Send the user input to the backend, you can register new path or controller in `web.php` as long as the controller able to verify and validate the input.
+1. Send the user input to the backend, you can create a new path or controller in `web.php` as long as the controller able to verify and validate the input.
 2. Validate the input. The input should be validate with the following contraint:
 
     - username is **required, unique, maximum length of 30 and minimum length of 6**
@@ -92,7 +92,7 @@ The controller for this can be found in `app/Http/Controllers/AuthController@log
 
 What you need to do:
 
-1. Send the user input to the backend, you can register new path or controller in `web.php` as long as the controller able to verify and validate the input.
+1. Send the user input to the backend, you can create a new path or controller in `web.php` as long as the controller able to verify and validate the input.
 2. Validate the input. The input should be validate with the following contraint:
 
     - username is **required, maximum length of 30 and minimum length of 6**
@@ -106,11 +106,12 @@ What you need to do:
 
 > Optional features if you still have more time:
 >
-> -   Create a middleware that prevent authenticated user from accessing `/login` and `/register`
+> -   Create a middleware that prevent authenticated user from accessing `/login` and `/register`. Redirect them to `/` if they try to access it.
+> -   Create a logout functionality
 
 ### Database
 
-You don't need to worry about how to connect your apps with the database since everything already been set up via docker. We also already created and migrated a users table.
+You don't need to worry about how to connect your apps with the database , everything already been handle with docker. We also just created and migrated a users table.
 
 What you need to do:
 
@@ -124,7 +125,7 @@ What you need to do:
 
 ### Views
 
-The views for `login`, `register`, `success`, and `fail` already added to `resources/views`. But it's not well wired together to satisfies the mentioned workflow. Feel free to tweak, tinker **and** use them as you wish.
+The views for `login`, `register`, `success`, and `fail` already added to `resources/views`. But it's not well wired together to satisfies the mentioned workflow. Feel free to tweak, tinker and use them as you wish.
 
 We also created an empty view page for you in `resources/views/index.blade.php`.
 
@@ -136,7 +137,7 @@ What you need to do:
 ![Question UI](/assets/question-ui.png)
 
 3. You are free to style the page as you wish as long as the UI have the mentioned items.
-4. For both `success` and `fail` views, you need to do some modifications to preview user's details, the instruction for this is further detailed on both respective file.
+4. For both `success` and `fail` views, you need to do some modifications to preview user's details, the instruction for this is further explained on both respective files.
 
 > Optional features if you still have more time:
 >
