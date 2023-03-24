@@ -33,6 +33,7 @@ The workflow:
 -   Login Page
 -   Trivia question page
 -   Final page(s) with results
+-   If got 100% answer right, go to `success` page, else go to `fail` page.
 
 # Your Task
 
