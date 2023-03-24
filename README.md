@@ -135,7 +135,7 @@ What you need to do:
 ![Question UI](/assets/question-ui.png)
 
 3. You are free to style the page as you wish as long as the UI have the mentioned items.
-4. For both `success` and `fail` views, you need to do some modifications so preview user's details, the instruction for this is detailed more on both respestive directory.
+4. For both `success` and `fail` views, you need to do some modifications to preview user's details, the instruction for this is further detailed on both respective file.
 
 > Optional features if you still have more time:
 >
