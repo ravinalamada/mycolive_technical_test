@@ -19,6 +19,10 @@ This is the welcome page of your `HomeWork`, this is a Laravel + MYSQL project, 
 
 You will need to have Docker and Git to be installed on your computer
 
+# Project Overview
+
+![project overview](/assets/interview-project.png)
+
 # Your Task
 
 We would like you to demonstrate your development skills and shine while creating a `Multiple choice Trivia Game` application.
