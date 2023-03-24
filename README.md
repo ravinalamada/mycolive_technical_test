@@ -170,11 +170,14 @@ What you need to do:
 -   **Q**: How many route should I create for this project?
     **A**: It does not matter, you can create as many as you want as long as the workflow can be created.
 
-###
-
 ### This is what you are not task to do:
 
 -   Running unit tests
 -   Responsive design, the styling is not so much of a concern for this particular task but rather, the way you implement your solution to create the mentioned workflow is what matter the most.
 -   Generate a new database
 -   Tinkering around dockerfile and docker-compose
+
+### References
+-   https://laravel.com/docs/10.x
+-   https://docs.docker.com/get-started/
+-   https://www.youtube.com/watch?v=Gjnup-PuquQ&ab_channel=Fireship
