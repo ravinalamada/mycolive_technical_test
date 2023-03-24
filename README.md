@@ -50,7 +50,7 @@ Please fork this repo to your private GitHub user, so that you can commit to you
 
 You can make your forked repo public. Anyway you'll benefit from having a new pet-project under your own github profile.
 
-We expect you to `create a new branch`, work on that `branch`, send a `pull request`, merging back your forked repository to our original repository after completing your tasks defined below.
+We expect you to `create a new branch`, work on that `branch` and send a `pull request`, merging back your forked repository to our original repository after completing your tasks defined below.
 
 ## Let's get started
 
@@ -164,10 +164,13 @@ What you need to do:
 ### FAQ
 
 -   **Q**: Where to run `php artisan` command?
+    <br />
     **A**: Since all of our code lives in docker container, you should run the command inside the `technical-interview-project` container.
 -   **Q**: Can I create a new component? create my own styling or use third party library?
+    <br />
     **A**: You are free to do so as long as the minimum requirement for the workflow are met.
 -   **Q**: How many route should I create for this project?
+    <br />
     **A**: It does not matter, you can create as many as you want as long as the workflow can be created.
 
 ### This is what you are not task to do:
