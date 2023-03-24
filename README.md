@@ -21,7 +21,7 @@ You will need to have Docker and Git to be installed on your computer
 
 # Project Overview
 
-![project overview](/assets/interview-project.png)
+![project overview](/assets/project-overview.png)
 
 # Your Task
 
