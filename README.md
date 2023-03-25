@@ -32,6 +32,7 @@ The workflow:
 -   Register page
 -   Login Page
 -   Trivia question page
+-   Store user's score on database
 -   Final page depend's on user's score
 -   If user able to get 100% questions correct, go to `success` page, else go to `fail` page.
 
@@ -162,19 +163,25 @@ What you need to do:
 >
 > -   Handle incoming parameters (similar to https://opentdb.com/api_config.php API, ie. number of question, difficulty)
 
-### FAQ
+### User's Score
+
+What you need to do:
+
+1.  You need to handle storage of user's score inside a new table which was mentioned earlier.
+
+## FAQ
 
 -   **Q**: Where to run `php artisan` command?
     <br />
-    **A**: Since all of our code lives in docker container, you should run the command inside the `technical-interview-project` container.
+    **A**: Since all of our code lives inside docker container, you should run the command inside the `technical-interview-project` container.
 -   **Q**: Can I create a new component? create my own styling or use third party library?
     <br />
     **A**: You are free to do so as long as the minimum requirement for the workflow are met.
 -   **Q**: How many route should I create for this project?
     <br />
-    **A**: It does not matter, you can create as many as you want as long as the workflow can be created.
+    **A**: Yes, you can create as many as you want as long as the minimum requirement for the workflow are met.
 
-### This is what you are not task to do:
+## This is what you are not task to do:
 
 -   Running unit tests
 -   Responsive design, the styling is not so much of a concern for this particular task but rather, the way you implement your solution to create the mentioned workflow is what matter the most.

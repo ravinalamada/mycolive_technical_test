@@ -32,6 +32,10 @@
     border-radius: 15px;
 }
 
+.top {
+    text-align: center;
+}
+
 .middle {
     font-size: 1.4rem;
     text-align: center;

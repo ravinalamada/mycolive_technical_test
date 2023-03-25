@@ -11,7 +11,7 @@
             </div>
             <div class="result-container">
                 <div class="top">
-                    <h1>Congratulation {INSERT_USERNAME_HERE} </h1>
+                    <h2>Congratulation {INSERT_USERNAME_HERE} </h2>
                 </div>
 
                 <div class= "middle">
@@ -20,6 +20,12 @@
 
                 <div class = "emote">
                     <h1>🎉 🎉 🎉</h1>
+                </div>
+
+                <div class="redirect">
+                    <a class = "button-redirect" href = "/">
+                        Do you want to try again?
+                    </a>
                 </div>
             </div>
         </div>
