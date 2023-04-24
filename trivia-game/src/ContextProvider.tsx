@@ -14,6 +14,7 @@ function ContextProvider({ children }: any) {
     const [answers, setAnswers] = useState<any[]>([]);
     const [options, setOptions] = useState([]);
     const currentQuestionIndex = currentItemIndex + 1;
+    const [isRegistered, setIsRegistered] = useState(false);
     const btnRef = useRef<any>(null);
 
     async function getTriviaGameData() {
@@ -26,23 +27,28 @@ function ContextProvider({ children }: any) {
     }, []);
 
     useEffect(() => {
-      const dataFormatted = triviaGamesData?.map((res: TriviaGame) => {
-        return {
-            ...res,
-            options: [...res.incorrect_answers, res.correct_answer].sort(() => {
-                return 0.5 - Math.random();
-            }).map((opt: string, index: number) => ({id: index, className: "", option: opt}))
-        };
-    });
-    setAnswers(dataFormatted)
-
-    }, [triviaGamesData, currentItemIndex])
+        const dataFormatted = triviaGamesData?.map((res: TriviaGame) => {
+            return {
+                ...res,
+                options: [...res.incorrect_answers, res.correct_answer]
+                    .sort(() => {
+                        return 0.5 - Math.random();
+                    })
+                    .map((opt: string, index: number) => ({
+                        id: index,
+                        className: "",
+                        option: opt,
+                    })),
+            };
+        });
+        setAnswers(dataFormatted);
+    }, [triviaGamesData, currentItemIndex]);
 
     useEffect(() => {
-      if(!!answers.length){
-        setOptions(answers[currentItemIndex]?.options)
-      }
-    }, [answers])
+        if (!!answers.length) {
+            setOptions(answers[currentItemIndex]?.options);
+        }
+    }, [answers]);
 
     return (
         <Context.Provider
@@ -54,6 +60,8 @@ function ContextProvider({ children }: any) {
                 btnRef,
                 score,
                 options,
+                isRegistered,
+                setIsRegistered,
                 setOptions,
                 setScore,
                 setCurrentItemIndex,

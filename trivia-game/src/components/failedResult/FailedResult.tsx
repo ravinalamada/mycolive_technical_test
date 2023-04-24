@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Container, Title } from "../triviaGame";
 import { Context } from "../../ContextProvider";
-import {Text} from '.';
+import {Button, Text} from '.';
 import { useNavigate } from "react-router-dom";
 
 const FailledResult = () => {
@@ -18,9 +18,9 @@ const FailledResult = () => {
         <Container>
            <Title>Trivia Game</Title>
            <Text>You have answered correctly <b>{score * 10}%</b> of the trivia questions</Text>
-           <button onClick={startNewGame}>
+           <Button onClick={startNewGame}>
               Do you want to try again
-           </button>
+           </Button>
         </Container>
     )
 }
