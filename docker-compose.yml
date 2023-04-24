@@ -24,7 +24,7 @@ services:
         build:
             dockerfile: .docker/php/Dockerfile
             context: .
-        command: sh -c "composer install && php artisan migrate --force && php artisan serve --host=0.0.0.0"
+        command: sh -c "composer install --prefer-dist && php artisan migrate --force && php artisan serve --host=0.0.0.0"
         ports:
             - 2222:8000
         volumes:
